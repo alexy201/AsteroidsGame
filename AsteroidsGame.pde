@@ -9,6 +9,11 @@ public void keyPressed()
     for (int i = 0; i < sky.length; i++){
       sky[i] = new Star();
     }
+    aster.clear();
+    for (int i = 0; i < 10; i++){
+      Asteroid curr = new Asteroid();
+      aster.add(curr);
+    }
   }
   if (key == 'd'){
     bob.turn(20);
